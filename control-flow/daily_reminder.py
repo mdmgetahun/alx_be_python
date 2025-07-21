@@ -2,7 +2,7 @@ task = input("Enter your task: ")
 priority = input("Priority (high/medium/low): ").lower()
 
 while True:
-    time_bound = input("Is it time-bound? (yes/no)").lower()
+    time_bound = input("Is it time-bound? (yes/no):").lower()
     if time_bound == "yes" or time_bound == "y" or time_bound == "no" or time_bound == "n":
         break
     else:
