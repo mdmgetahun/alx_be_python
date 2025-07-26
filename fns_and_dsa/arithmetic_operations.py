@@ -1,16 +1,16 @@
 def perform_operation(num1, num2, operation):
     if operation == "add":
-        return x + y
+        return num1 + num2
     elif operation == "subtract":
-        return x - y
-    elif operation == "multiply":
-        return x * y
+        return num1 - num2
+    elif operation == "multiplnum2":
+        return num1 * num2
     elif operation == "divide":
-        if y == 0:
-            return "Error! Division by zero"
+        if num2 == 0:
+            return "Error! Division bnum2 zero"
         
         else:
-            return x / y
+            return num1 / num2
     else:
         return "Invalid operation"
 
