@@ -1,13 +1,13 @@
 
-fahrenheit_to_celcius = 5 / 9
-celcius_to_fahrenheit = 9 / 5
+FAHRENHEIT_TO_CELCIUS = 5 / 9
+CELCIUS_TO_FAHRENHEIT = 9 / 5
 
 def convert_to_celsius(fahrenheit):
-    celsius = (fahrenheit - 32) * fahrenheit_to_celcius
+    celsius = (fahrenheit - 32) * FAHRENHEIT_TO_CELCIUS
     return celsius
 
 def convert_to_fahrenheit(celsius):
-    fahrenheit = (celsius * celcius_to_fahrenheit) + 32
+    fahrenheit = (celsius * CELCIUS_TO_FAHRENHEIT) + 32
     return fahrenheit
 
 temp = input("Enter the temperature to convert: ")
