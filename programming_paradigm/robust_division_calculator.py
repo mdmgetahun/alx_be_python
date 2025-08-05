@@ -47,7 +47,7 @@ def safe_divide(numerator, denominator):
     #     print(e)
     # raise ZeroDivisionError("Error:  zero.")
     except ValueError:
-        raise ValueError("Invalid numeric input.")
+        raise ValueError("Error: Please enter numeric values only.")
     
 def main():
     try:
@@ -56,8 +56,6 @@ def main():
         result = safe_divide(numerator, denominator)
         print(result)
     except ZeroDivisionError as e:
-        print(e)
-    except ValueError as e:
         print(e)
 
 if __name__ == "__main__":
