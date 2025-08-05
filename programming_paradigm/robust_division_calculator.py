@@ -1,7 +1,5 @@
 def safe_divide(numerator, denominator):
-    """
-    Perform basic division of two numbers.
-    """
+    
     if denominator == 0:
         raise ZeroDivisionError("Denominator cannot be zero.")
     return float(numerator) / float(denominator)
@@ -17,5 +15,6 @@ def main():
         print("Error: Please enter numeric values only.")
     except ZeroDivisionError:
         print("Error: Cannot divide by zero.") 
-main()
+if __name__ == "__main__":
+    main()
     
