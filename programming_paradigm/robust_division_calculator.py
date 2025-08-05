@@ -59,4 +59,5 @@ def main():
     except ValueError:
         print("Error: Invalid input. Please enter numbers.")
 
-main()
+if __name__ == "__main__":
+    main()
