@@ -37,14 +37,15 @@ def safe_divide(numerator, denominator):
         numerator = float(numerator)
         denominator = float(denominator)
 
-        # if denominator == 0:
-        #     raise ZeroDivisionError("Error: Cannot divide by zero.")
+        if denominator == 0:
+            return ZeroDivisionError("Error: Cannot divide by zero.")
 
         result = numerator / denominator
         return f"The result of the division is {result}"
 
-    except ZeroDivisionError:
-        raise ZeroDivisionError("Error: Cannot divide by zero.")
+    # except ZeroDivisionError as e:
+    #     print(e)
+    # raise ZeroDivisionError("Error:  zero.")
     except ValueError:
         raise ValueError("Invalid numeric input.")
     
