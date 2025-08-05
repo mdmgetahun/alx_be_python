@@ -15,6 +15,6 @@ def main():
         print("Error: Please enter numeric values only.")
     except ZeroDivisionError:
         print("Error: Cannot divide by zero.") 
-if __name__ == "__main__":
+
     main()
     
