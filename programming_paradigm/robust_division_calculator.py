@@ -54,10 +54,11 @@ def main():
         denominator = input("Enter the denominator: ")
         result = safe_divide(numerator, denominator)
         print(result)
-    except ZeroDivisionError:
+    except ZeroDivisionError as e:
+        print(e)
         print("Error: Cannot divide by zero.")
-    except ValueError:
-        print("Error: Invalid input. Please enter numbers.")
+    except ValueError as e:
+        print(e)
 
 if __name__ == "__main__":
     main()
