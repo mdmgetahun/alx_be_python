@@ -47,7 +47,7 @@ def safe_divide(numerator, denominator):
     #     print(e)
     # raise ZeroDivisionError("Error:  zero.")
     except ValueError:
-        raise ValueError("Error: Please enter numeric values only.")
+        return "Error: Please enter numeric values only."
     
 def main():
     try:
